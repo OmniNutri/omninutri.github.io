@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniNutri - Comprehensive Nutrition Analysis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #2EB885 0%, #3DD598 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #2EB885, #3DD598);
+            border-radius: 27px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(46, 184, 133, 0.3);
+        }
+        .logo-circle {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2EB885, #3DD598, #76D9A9);
+            position: relative;
+        }
+        .logo-circle::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: white;
+        }
+        .logo-pie {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: conic-gradient(#2EB885 0deg 120deg, #4CD9A5 120deg 240deg, #76D9A9 240deg 360deg);
+        }
+        h1 {
+            color: #2EB885;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .tagline {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .description {
+            color: #555;
+            margin-bottom: 30px;
+            font-size: 1.05em;
+        }
+        .features {
+            text-align: left;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .features h2 {
+            color: #2EB885;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        .features ul {
+            list-style: none;
+        }
+        .features li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        .features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #2EB885;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .links {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #e9ecef;
+        }
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 30px;
+            background: #2EB885;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+        .links a:hover {
+            background: #26a073;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(46, 184, 133, 0.4);
+        }
+        .links a.secondary {
+            background: white;
+            color: #2EB885;
+            border: 2px solid #2EB885;
+        }
+        .links a.secondary:hover {
+            background: #f8f9fa;
+        }
+        .footer {
+            margin-top: 30px;
+            color: #999;
+            font-size: 0.9em;
+        }
+        .app-store-badge {
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            .container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-circle">
+                <div class="logo-pie"></div>
+            </div>
+        </div>
+
+        <h1>OmniNutri</h1>
+        <p class="tagline">Comprehensive Nutrition Analysis</p>
+
+        <p class="description">
+            Track your nutrition, identify gaps, and achieve optimal health with comprehensive analysis of macronutrients, vitamins, minerals, and amino acids.
+        </p>
+
+        <div class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Complete nutritional tracking and analysis</li>
+                <li>Identify nutritional gaps and deficiencies</li>
+                <li>Personalized supplement recommendations</li>
+                <li>Weekly and monthly nutrition reports</li>
+                <li>Extensive food database (10,000+ items)</li>
+                <li>Multi-language support (English & Chinese)</li>
+            </ul>
+        </div>
+
+        <div class="app-store-badge">
+            <p style="color: #666; margin-bottom: 10px;">Coming soon to</p>
+            <svg height="40" viewBox="0 0 120 40" style="display: inline-block;">
+                <rect width="120" height="40" rx="8" fill="#000"/>
+                <text x="60" y="25" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">App Store</text>
+            </svg>
+        </div>
+
+        <div class="links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html" class="secondary">Terms of Service</a>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 OmniNutri. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="mailto:support@omninutri.app" style="color: #2EB885; text-decoration: none;">support@omninutri.app</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
